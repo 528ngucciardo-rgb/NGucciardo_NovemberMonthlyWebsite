@@ -89,7 +89,9 @@
 
   <!--Menu-->
   <section id="menu" class="sec">
+
     <div class="fade-in">
+
       <h2 class="sec-title">
         <img class="deco" src="turkey.png" alt="Turkey" aria-hidden="true">
         <img class="deco" src="mashed-potatoes.png" alt="Mashed Potatoes" aria-hidden="true">
@@ -123,17 +125,161 @@
       <!--Mobile-->
       <div class="mobile-only">
         <div id="menuCarousel" class="carousel slide menu-carousel" data-bs-interval="false" aria-label="Menu categories">
+
           <div class="carousel-inner">
             <div class="carousel-item active">
-              
+              <article class="box menu-card">
+                <h3>Mains</h3>
+                ul><li>Roast turkey</li><li>Honey-glazed ham</li><li>Stuffed acor squash (vegetarian)</li></ul>
+          </article>
+          </div>
+
+          <div class="carousel-item">
+          <article class="box menu-card">
+            <h3>Sides</h3>
+            <ul><li>Mashed potatoes</li><li>Stuffing</li><li>Mac &amp; Cheese</li><li>Green beans</li><li>Cranberry sauce</li><li>Cornbread</li></ul>
+          </article>
+          </div>
+
+          <div class="carousel-item">
+          <article class="box menu-card">
+            <h3>Desserts</h3>
+            <ul><li>Pumpkin pie</li><li>Apple pie</li></ul>
+          </article>
+          </div>
+
+          <div class="carousel-item">
+          <article class="box menu-card">
+            <h3>Drinks</h3>
+            <ul><li>Warm apple cider</li><li>Water</li><li>Coffee</li></ul>
+              </article>
+              </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Mains">
+              <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="1" aria-label="Sides"></button>
+              <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="2" aria-label="Desserts"></button>
+              <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="3" aria-label="Drinks"></button>
+              </button>
+
             </div>
           </div>
         </div>
+
+        <p class="box note">Allergies: Let our staff know when you arrive.</p>
       </div>
 
     </div>
   </section>
 
+  <!--Schedule-->
+  <section id="schedule" class="sec">
+    <div class="fade-in">
+      <h2 class="sec-title">Event Schedule</h2>
+
+      <!--Desktop-->
+      <div class="desktop-only">
+        <div class="sched-wrap">
+          <img class="big-turkey" src="turkey.png"> alt="Big Turkey" aria-hidden="true">
+          <div class="sched-grid">
+            <article class="box sched-box">
+              <p class="time">3:00 PM</p>
+              <p>Doors Open, Kids' Craft Corner, Pumpkin Decorating, Thankful Wall</p>
+            </article>
+            <article class="box sched-box">
+              <p class="time">4:30 PM</p>
+              <p>Dinner is Served</p>
+            </article>
+            <article class="box sched-box">
+              <p class="time">6:00 PM</p>
+              <p>Pie Contest and Desserts</p>
+            </article>
+            <article class="box sched-box">
+              <p class="time">6:45 PM</p>
+              <p>Food Bank Thank You and Raffle</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!--Mobile accordian-->
+      <div class="mobile-only">
+        <div class="accordian" id="schedAcc">
+        
+          <div class="accordian-item">
+        <h3 class="accordian-header"><button class="accordian-buttom" type="button" data-bs toggle="collapse" data-bs-target="#s1" aria-expanded="true" aria-controls="s1">3:00 PM</button></h3>
+        <div id="s1" class="accordian-collapse collapse show" data-bs-parent="#schedAcc"><div class="accordian-body">Doors open, Kids's Craft Corner, Pumpkin Decorating, Thankful Wall</div></div>
+        </div>
+
+        <div class="accordian-item">
+        <h3 class="accordian-header"><button class="accordian-buttom" type="button" data-bs toggle="collapse" data-bs-target="#s2" aria-expanded="false" aria-controls="s2">4:30 PM</button></h3>
+        <div id="s2" class="accordian-collapse collapse show" data-bs-parent="#schedAcc"><div class="accordian-body">Dinner is Served</div></div>
+        </div>
+
+        <div class="accordian-item">
+        <h3 class="accordian-header"><button class="accordian-buttom" type="button" data-bs toggle="collapse" data-bs-target="#s3" aria-expanded="false" aria-controls="s3">6:00 PM</button></h3>
+        <div id="s3" class="accordian-collapse collapse show" data-bs-parent="#schedAcc"><div class="accordian-body">Pie Contest and Desserts</div></div>
+        </div>
+
+        <div class="accordian-item">
+        <h3 class="accordian-header"><button class="accordian-buttom" type="button" data-bs toggle="collapse" data-bs-target="#s4" aria-expanded="false" aria-controls="s4">6:45 PM</button></h3>
+        <div id="s4" class="accordian-collapse collapse show" data-bs-parent="#schedAcc"><div class="accordian-body">Food Bank Thank You and Raffle</div></div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+  </section>
+ 
 </main>
+
+<!--Tickets & RSVP-->
+<section id="tickets" class="sec">
+  <div class="fade-in">
+    <h2 class="sec-title">
+      <img class="deco" src="ticket.png" aria-hidden="true">
+      Tickets &amp; RSVP
+      <img class="deco" src="family.png" aria-hidden="true">
+    </h2>
+
+    <div class="tix-grid">
+      <article class="box tix-box"><p class="label">Adults></p><p class="price">$15</p></article>
+      <article class="box tix-box"><p class="label">Kids Under 4 &ndash;12></p><p class="price">$8</p></article>
+      <article class="box tix-box"><p class="label">Under 4></p><p class="price">FREE</p></article>
+      <article class="box tix-box"><p class="label">Family 4-Pack></p><p class="price">$40</p></article>
+</div>
+
+<div class="tix-notes">
+  <article class="box tix-box"><p class="label">Food Drive</p><p>Bring 3 canned goods and get $2 off each ticket.</p></article>
+  <article class="box tix-box"><p class="label">RSVP By</p><p class="price">Friday, November 20</p></article>
+</div>
+
+<div class="center">
+  <a class="btn-harvest btn-pop" href="#contact">RSVP Now</a>
+</div>
+
+
+  </div>
+</section>
+
+<!--Food Bank-->
+<section id="foodbank" class="sec">
+  <div class="fade-in">
+    <h2 class="sec-title">Harvest Hands<br>Food Bank</h2>
+    <p class="lead-text">100% of the ticket proceeds and donations go to the Harvest Hands Food Bank of Monmouth.</p>
+  </div>
+</section>
 
 </body>
