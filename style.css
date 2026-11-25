@@ -12,3 +12,82 @@
     --body-font: 'Nunito', sans-serif;
     --rail: 0px; 
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    color: var(--cream);
+    background: linear-gradient(to right, var(--cream) var(--rail, var(--brown) var(--rail));
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: var(--head-font);
+    font-weight: 900;
+}
+
+p {
+    margin: 0 0 .5rem;
+}
+
+.mobile-only {
+    display: block;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.box {
+    background: var(--cream);
+    color: var(--brown);
+    border: 3px solid var(--orange);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    text-align: center;
+}
+
+.deco {
+    font-size: 1.8rem;
+}
+
+img.deco, img.corner, img.leaf, img.big-turkey {
+    height: 2em;
+    width: auto;
+}
+
+img.deco {
+    vertical-align: -0.12em;
+    margin: 0 .1em;
+}
+
+.leaf {
+    position: fixed;
+    top: -40px;
+    font-size: 2.2rem;
+    opacity: .55;
+    pointer-events: none;
+    z-index: 1050;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    25%  { transform: translate(var(--sway, 30px), 28vh) rotate(calc(var(--spin, 360deg) * .25)); }
+    50%  { transform: translate(0, 56vh) rotate(calc(var(--spin, 360deg) * .5)); }
+    75%  { transform: translate(calc(var(--sway, 30px) * -1), 84vh) rotate(calc(var(--spin, 360deg) * .75)); }
+    100% { transform: translate(0, 115vh) rotate(var(--spin, 360deg)); }
+}
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: var(--rail);
+}
