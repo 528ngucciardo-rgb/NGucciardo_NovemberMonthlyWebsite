@@ -90,4 +90,19 @@ img.deco {
     bottom: 0;
     left: 0;
     width: var(--rail);
+      z-index: 1030;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .45rem;
+    padding: .5rem .25rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: var(--cream);
+    border-right: 4px solid var(--orange);
+    box-shadow: var(--shadow);
+    transform: translateX(-110%);
+    visibility: hidden;
+    transition: transform .5s cubic-bezier(.3, 1.3, .5, 1), visibility 0s .5s;
 }
