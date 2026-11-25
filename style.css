@@ -1,3 +1,14 @@
-body {
-    
+:root {
+    --brown: #3e2616;
+    --orange: #b5400a;
+    --cream: #fff3c4;
+    --gold: #e8a317;
+    --cran: #7a1f2b;
+    --sage: #55621f;
+
+    --shadow: 0 6px 14px rgba (0, 0, 0, .45);
+    --shadow-lift: 0 14px 26px rgba (0, 0, 0, .6);
+    --head-font: 'Playfair Display', serif;
+    --body-font: 'Nunito', sans-serif;
+    --rail: 0px; 
 }
