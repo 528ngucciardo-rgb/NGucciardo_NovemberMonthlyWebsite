@@ -6,8 +6,8 @@
     --cran: #7a1f2b;
     --sage: #55621f;
 
-    --shadow: 0 6px 14px rgba (0, 0, 0, .45);
-    --shadow-lift: 0 14px 26px rgba (0, 0, 0, .6);
+    --shadow: 0 6px 14px rgba(0, 0, 0, .45);
+    --shadow-lift: 0 14px 26px rgba(0, 0, 0, .6);
     --head-font: 'Playfair Display', serif;
     --body-font: 'Nunito', sans-serif;
     --rail: 0px; 
@@ -146,7 +146,7 @@ img.deco {
 .rail-link span {
     position: relative;
     max-width: 66%;
-    text-shadow: 0 1px 2px rga(0, 0, 0, .5);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
 }
 
 .rc1 {
@@ -161,7 +161,7 @@ img.deco {
     background: var(--sage);
 }
 
-.rali-link:hover,
+.rail-link:hover,
 .rail-link.active {
     background: var(--gold);
     color: var(--brown);
@@ -211,7 +211,7 @@ img.deco {
 .corner {
     position: absolute;
     top: .4rem;
-    font-size: 2remp
+    font-size: 2remp;
     opacity: .9;
     pointer-events: none;
 
@@ -278,7 +278,7 @@ img.deco {
     fill: var(--brown);
 }
 
-.feather:hover
+.feather:hover,
 .feather:focus {
     transform: translateY(-14px);
     filter: drop-shadow(0 8px 5px rgba(0, 0, 0, .45));
@@ -309,7 +309,7 @@ img.deco {
 }
 
 .t-eye {
-    fll: var(--cream);
+    fill: var(--cream);
 }
 
 .t-pupil {
@@ -496,7 +496,7 @@ main {
     transition: color .3s;
 }
 
-.sched-box: hover {
+.sched-box:hover {
     transform: scale(1.08);
     background: var(--cran);
     color: var(--cream);
@@ -504,7 +504,7 @@ main {
     animation: wiggle .5s ease;
 }
 
-.sched-box: hover .time {
+.sched-box:hover .time {
     color: var(--gold);
 }
 
@@ -529,7 +529,7 @@ main {
 }
 
 .accordion-item {
-    margin-bottom: .7rem
+    margin-bottom: .7rem;
     border: 3px solid var(--orange);
     border-radius: 14px;
     overflow: hidden;
@@ -553,7 +553,7 @@ main {
 .tix-notes {
     display: grid;
     gap: .9rem;
-    margin-bottm: 1rem;
+    margin-bottom: 1rem;
 }
 
 .tix-grid {
@@ -589,11 +589,11 @@ main {
     transform: scale(1.08);
     background: var(--orange);
     color: var(--cream);
-    box-shadow: var(--shadow-lift)
-    animation: wiggle .5 ease;
+    box-shadow: var(--shadow-lift);
+    animation: wiggle .5s ease;
 }
 
-.tix-box: hover .price {
+.tix-box:hover .price {
     color: var(--cream);
 }
 
@@ -847,7 +847,7 @@ button:focus-visible {
         padding: 1.5rem 2rem 2.5rem;
     }
     .corner {
-        font-size: rem;
+        font-size: 4rem;
         top: 1rem;
     }
     .corner-l {
@@ -880,7 +880,7 @@ button:focus-visible {
         padding: 1rem 1.6rem;
     }
     .info-box h2 {
-        font-size 1.15rem;
+        font-size: 1.15rem;
     }
     .info-box p {
         font-size: 1.3rem;
@@ -902,7 +902,7 @@ button:focus-visible {
     }
     .sched-wrap {
         display: grid;
-        grid-template: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
         align-items: center;
         gap: 2rem;
         max-width: 1100px;
@@ -911,7 +911,7 @@ button:focus-visible {
     .big-turkey {
         font-size: 11rem;
         line-height: 1;
-        justify-selft: center;
+        justify-self: center;
     }
     .sched-grid {
         display: grid;
