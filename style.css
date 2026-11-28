@@ -211,7 +211,7 @@ img.deco {
 .corner {
     position: absolute;
     top: .4rem;
-    font-size: 2remp;
+    font-size: 2rem;
     opacity: .9;
     pointer-events: none;
 
@@ -963,8 +963,8 @@ button:focus-visible {
         flex-direction: row;
         justify-content: center;
         gap: 3rem;
-        max-width: 1100px
-        margin 0 auto:
+        max-width: 1100px;
+        margin: 0 auto:
     }
     .loc-info {
         flex: 1;
